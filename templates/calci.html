@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:  sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            width: fit-content;
+            height: 100vh;
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .calculator{
+            background-color: pink;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .calculator form input{
+            border: 1px solid #ccc;
+            height: fit-content;
+            width: fit-content;
+            border-radius: 0%;
+            box-shadow: inset;
+            background: fixed;
+            font-size: medium;
+            cursor: alias;
+            margin: auto;
+            text-align: center;
+        }
+        form.display{
+            display: flex;
+            justify-content: flex-end;
+            margin: auto;
+        }
+        form.display input{
+            text-align: center;
+            flex: 1;
+            font-size: medium;
+            box-shadow: #ccc;
+            border: #ccc;
+            border-radius: 0cap;
+            padding: 0%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="calculator"></div>
+    <form>
+        <div class="display">
+            <input type="text" class="operator">
+        </div>
+        <div>
+            <input type="button" value="AC" onclick="display.Value=''" class="operator">
+            <input type="button" value="DE" onclick="display.Value=display.Value.slice(0,-1)" class="operator">
+            <input type="button" value="%"  onclick="display.Value+='%'" class="operator">
+            <input type="button" value="/" onclick="display.Value+='/'" class="operator">
+        </div>
+        <div>
+            <input type="button" value="7" onclick="display.Value+='7'">
+            <input type="button" value="8" onclick="display.Value+='8'">
+            <input type="button" value="9" onclick="display.Value+='9'">
+            <input type="button" value="*" onclick="display.Value+='*'" class="operator">
+        </div>
+        <div>
+            <input type="button" value="4" onclick="display.Value+='4'">
+            <input type="button" value="5" onclick="display.Value+='5'">
+            <input type="button" value="6" onclick="display.Value+='6'">
+            <input type="button" value="+" onclick="display.Value+='+'" class="operator">
+        </div>
+        <div>
+            <input type="button" value="1" onclick="display.Value+='1'">
+            <input type="button" value="2" onclick="display.Value+='2'">
+            <input type="button" value="3" onclick="display.Value+='3'">
+            <input type="button" value="-" onclick="display.Value+='-'" class="operator">
+        </div>
+        <div>
+            <input type="button" value="00" onclick="display.Value+='00'">
+            <input type="button" value="0" onclick="display.Value+='0'">
+            <input type="button" value="." onclick="display.Value+='.'">
+            <input type="button" value="=" onclick="displayva.Value=eval(display.Value)" class="operator">
+        </div>
+    </form>
+</body>
+</html>

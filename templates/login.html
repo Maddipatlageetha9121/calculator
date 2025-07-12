@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+    <title>login page</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Login container */
+        .login-container {
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Form group */
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        /* Submit button */
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+        background-color: #0056b3;
+        }
+
+        /* Register link */
+        .register-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+        text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>login form</form></h1>
+        <form action="/login" method="post">
+            <div class="form-group">
+                <label for="username">username</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">email</label>
+                <input type="text" id="email" name="email" placeholder="Enter email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">password</label>
+                <input type="text" id="password" name="password" placeholder="Enter password" required>
+            </div>
+
+            <div>
+                <button type="submit" class="btn">submit</button>
+            </div>
+        </form>
+        <p class="dashboard-link">
+            welcome to dashboard page.<a href="/dashboard">click here</a>
+        </p>
+    </div>
+</body>
+</html>
